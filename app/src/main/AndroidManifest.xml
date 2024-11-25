@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name=".models.MyApplication"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TotoSteps"
+        tools:targetApi="31">
+        <activity
+            android:name=".activity.SetNewPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.OnboardingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SelectChildQuestionnaire"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SelectChildActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChildrenAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".ChildrenFragment"
+            android:exported="false" />
+        <activity
+            android:name=".MilestoneAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MilestoneDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Assessement_child_resource"
+            android:exported="false" />
+        <activity
+            android:name=".MilestonesResourcesAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LogoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentsProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MilestoneResources"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ResourceDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AssessmentResourcesAllActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.HomeScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ParentsAgreementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AutismUploadPhoto"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChildAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ViewMilestoneAssessmentResults"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DevelopmentalMilestonesScreenSix"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DevelopmentalMilestonesScreenFour"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DevelopmentalMilestonesScreenThree"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DevelopmentalMilestonesScreenTwo"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DevelopmentalMilestonesScreenOne"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ViewResults"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QuestionScreenTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.QuestionScreenOneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeaserTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeaserThreeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TeaserOne"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
